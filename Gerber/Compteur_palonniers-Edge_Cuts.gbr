@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8)-1*%
+%TF.CreationDate,2023-04-27T14:44:06+02:00*%
+%TF.ProjectId,Compteur_palonniers,436f6d70-7465-4757-925f-70616c6f6e6e,rev?*%
+%TF.SameCoordinates,PX6dac2c0PY7bfa480*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2023-04-27 14:44:06*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X0Y40000000D01*
+X75000000Y0D02*
+X0Y0D01*
+X75000000Y40000000D02*
+X75000000Y0D01*
+X0Y40000000D02*
+X75000000Y40000000D01*
+M02*
