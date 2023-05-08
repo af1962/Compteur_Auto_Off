@@ -61,7 +61,7 @@ void loop()
         minuterie--;
    }
      
-   if(minuterie<=0)
+   if(minuterie<=0 ) //|| str=="off")
    {
        digitalWrite(automaintien,LOW);     // Coupe l'alimentation
    }         
