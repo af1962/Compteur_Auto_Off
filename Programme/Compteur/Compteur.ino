@@ -2,6 +2,7 @@
 
 #include <SoftwareSerial.h>
 #include <simpleBouton.h>
+#include <EEPROM.h>
 #include "Heures.h"
 
 SoftwareSerial Serial(0,4); // RX ,TX
@@ -20,9 +21,11 @@ void setup()
 {  
   Serial.begin(9600);
   Serial.setTimeout(100);
-  pinMode(automaintien,OUTPUT);
+  pinMode(automaintien,OUTPUT); 
   minuterie=duree;
   digitalWrite(automaintien,HIGH);
+  EEPROM.get(0,compteur);
+  ValideNextion();
 }
 
 
@@ -46,6 +49,7 @@ void loop()
       Serial.print("cpt.val=");
       Serial.print(compteur);  
       ValideNextion();  
+      EEPROM.update(0,compteur);
       minuterie= duree ;      // Relance la minuterie à chaque passage de palonnier         
   }      
   
