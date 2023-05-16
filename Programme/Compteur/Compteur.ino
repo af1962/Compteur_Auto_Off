@@ -37,7 +37,7 @@ void loop()
   {
     compteur=0;
     Serial.print("cpt.val=");
-    Serial.print(compteur);  
+    Serial.print(compteur);
     ValideNextion();
   }
   
@@ -47,7 +47,7 @@ void loop()
   {   
       compteur++;
       Serial.print("cpt.val=");
-      Serial.print(compteur);  
+      Serial.print(compteur);
       ValideNextion();  
       EEPROM.update(0,compteur);
       minuterie= duree ;      // Relance la minuterie à chaque passage de palonnier         
