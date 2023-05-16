@@ -25,6 +25,8 @@ void setup()
   minuterie=duree;
   digitalWrite(automaintien,HIGH);
   EEPROM.get(0,compteur);
+  Serial.print("cpt.val=");
+  Serial.print(compteur);
   ValideNextion();
 }
 
@@ -49,7 +51,7 @@ void loop()
       Serial.print("cpt.val=");
       Serial.print(compteur);
       ValideNextion();  
-      EEPROM.update(0,compteur);
+      EEPROM.put(0,compteur);
       minuterie= duree ;      // Relance la minuterie à chaque passage de palonnier         
   }      
   
@@ -65,7 +67,7 @@ void loop()
         minuterie--;
    }
      
-   if(minuterie<=0 ) //|| str=="off")
+   if(minuterie<=0 || str=="off")
    {
        digitalWrite(automaintien,LOW);     // Coupe l'alimentation
    }         
