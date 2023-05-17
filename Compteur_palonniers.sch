@@ -31,18 +31,16 @@ RX
 $Comp
 L power:+5V #PWR0103
 U 1 1 6432EA61
-P 5350 2350
-F 0 "#PWR0103" H 5350 2200 50  0001 C CNN
-F 1 "+5V" H 5365 2523 50  0000 C CNN
-F 2 "" H 5350 2350 50  0001 C CNN
-F 3 "" H 5350 2350 50  0001 C CNN
-	1    5350 2350
-	-1   0    0    1   
+P 6800 2050
+F 0 "#PWR0103" H 6800 1900 50  0001 C CNN
+F 1 "+5V" H 6815 2223 50  0000 C CNN
+F 2 "" H 6800 2050 50  0001 C CNN
+F 3 "" H 6800 2050 50  0001 C CNN
+	1    6800 2050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 2200 5350 2200
-Wire Wire Line
-	5350 2200 5350 2350
+	6800 2200 6800 2050
 Wire Wire Line
 	2150 2950 2150 3000
 $Comp
@@ -78,7 +76,7 @@ F 3 "" H 6800 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3350 6800 3200
-Text GLabel 5150 3550 2    50   Input ~ 0
+Text GLabel 5650 3150 2    50   Input ~ 0
 ON
 Text GLabel 7400 2600 2    50   Input ~ 0
 ON
@@ -97,7 +95,6 @@ F 3 "" H 9650 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 2200 6800 2250
-Connection ~ 5350 2200
 $Comp
 L Alimentation:MP1584 U1
 U 1 1 6432D7F0
@@ -154,7 +151,7 @@ F 3 "~" H 2150 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3550 5150 3550
+	5350 3150 5650 3150
 $Comp
 L Personnel:RelaisSRD K101
 U 1 1 6439057C
@@ -180,12 +177,12 @@ $EndComp
 $Comp
 L Personnel:Transistor_TO92 TR101
 U 1 1 6439D8F7
-P 4150 3550
-F 0 "TR101" H 4341 3596 50  0000 L CNN
-F 1 "Transistor_TO92" H 4341 3505 50  0000 L CNN
-F 2 "Transistor:TO-92" H 4350 3475 50  0001 L CIN
-F 3 "" H 4150 3550 50  0001 L CNN
-	1    4150 3550
+P 4650 3150
+F 0 "TR101" H 4841 3196 50  0000 L CNN
+F 1 "Transistor_TO92" H 4841 3105 50  0000 L CNN
+F 2 "Transistor:TO-92" H 4850 3075 50  0001 L CIN
+F 3 "" H 4650 3150 50  0001 L CNN
+	1    4650 3150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -193,27 +190,27 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0106
 U 1 1 643A273A
-P 4050 3850
-F 0 "#PWR0106" H 4050 3600 50  0001 C CNN
-F 1 "GND" H 4055 3677 50  0000 C CNN
-F 2 "" H 4050 3850 50  0001 C CNN
-F 3 "" H 4050 3850 50  0001 C CNN
-	1    4050 3850
+P 4550 3450
+F 0 "#PWR0106" H 4550 3200 50  0001 C CNN
+F 1 "GND" H 4555 3277 50  0000 C CNN
+F 2 "" H 4550 3450 50  0001 C CNN
+F 3 "" H 4550 3450 50  0001 C CNN
+	1    4550 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Personnel:R R103
 U 1 1 643A4D4E
-P 4700 3550
-F 0 "R103" V 4493 3550 50  0000 C CNN
-F 1 "R10K" V 4584 3550 50  0000 C CNN
-F 2 "Resistance:R_025W" V 4630 3550 50  0001 C CNN
-F 3 "~" H 4700 3550 50  0001 C CNN
-	1    4700 3550
+P 5200 3150
+F 0 "R103" V 4993 3150 50  0000 C CNN
+F 1 "R10K" V 5084 3150 50  0000 C CNN
+F 2 "Resistance:R_025W" V 5130 3150 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5200 3150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 3550 4350 3550
+	5050 3150 4850 3150
 $Comp
 L Personnel:Connecteur_Nextion J101
 U 1 1 643A843B
@@ -251,8 +248,6 @@ F 3 "" H 8450 2150 50  0001 C CNN
 	1    8450 2150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5350 2200 6800 2200
 $Comp
 L power:GND #PWR0108
 U 1 1 643A447E
@@ -329,11 +324,7 @@ Wire Wire Line
 	4050 1250 4050 2200
 Connection ~ 4050 2200
 Wire Wire Line
-	4050 2200 4450 2200
-Wire Wire Line
-	3800 2700 4050 2700
-Wire Wire Line
-	4050 3850 4050 3750
+	4550 3450 4550 3350
 $Comp
 L power:GND #PWR0109
 U 1 1 64670522
@@ -348,8 +339,6 @@ $EndComp
 Wire Wire Line
 	4300 1950 4450 1950
 Wire Wire Line
-	4050 2700 4050 3350
-Wire Wire Line
 	3200 2700 3200 3100
 Wire Wire Line
 	3200 3100 3350 3100
@@ -358,8 +347,24 @@ Wire Wire Line
 Wire Wire Line
 	3800 3100 3800 2700
 Connection ~ 3800 2700
-Text GLabel 4050 2200 3    50   Input ~ 0
-14
-Text GLabel 3200 2700 0    50   Input ~ 0
-14
+Text GLabel 4100 2450 2    50   Input ~ 0
+A2
+Text GLabel 3100 2700 0    50   Input ~ 0
+A2
+Wire Wire Line
+	3200 2700 3100 2700
+Connection ~ 3200 2700
+Wire Wire Line
+	4050 2450 4050 2200
+Wire Wire Line
+	4050 2200 4450 2200
+Wire Wire Line
+	4050 2450 4100 2450
+Connection ~ 6800 2200
+Wire Wire Line
+	5150 2200 6800 2200
+Wire Wire Line
+	4550 2700 4550 2950
+Wire Wire Line
+	3800 2700 4550 2700
 $EndSCHEMATC
