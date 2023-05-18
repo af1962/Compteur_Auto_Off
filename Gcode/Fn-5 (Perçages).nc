@@ -1,0 +1,34 @@
+%
+( CopperCAM - 22/12/2022 / ISO-Mill Output )
+( C:\Users\f-add\Documents\Gcode\Fn.nc created 17/05/2023 at 12:20 )
+( Workpiece dimensions: 85 x 55 x 1.6 mm )
+G21 G40 G54
+G80 G90 G94
+( Outil n° 13 "Foret 1.2" / Diamètre 1.2 mm )
+T13 M06
+M03 S12000
+G00 Z10
+G00 Z2
+G00 X27.725 Y1.375
+G00 Z0
+G01 F60 Z-2
+G00 Z2
+G00 Y-3.705
+G00 Z0
+G01 F60 Z-2
+G00 Z2
+G00 Y-8.785
+G00 Z0
+G01 F60 Z-2
+G00 Z2
+G00 Y-13.865
+G00 Z0
+G01 F60 Z-2
+G00 Z2
+G00 Y-18.945
+G00 Z0
+G01 F60 Z-2
+G00 Z10
+M05
+M02
+%
